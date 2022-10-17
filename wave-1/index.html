@@ -14,7 +14,7 @@
         // 2 es papel
         // 3 es tijera
         let jugador = 0;
-        let pc = 2;
+        let pc = 1;
         
         jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera");
 
@@ -27,7 +27,27 @@
         } else {
             alert("naadaaaaaa");
         }
-        // alert("Elegiste: " + jugador);
+        // pc
+        if(pc == 1) {
+            alert("PC elige Piedra");
+        } else if(pc == 2) {
+            alert("PC elige Papel");
+        }else if(pc == 3){
+            alert("PC elige tijera");
+        }
+        //COMBATE
+        if(pc == jugador) {
+            aler("E M P A T E");
+        } else if(jugador == 1 && pc == 3) {
+            alert("G A N A S T E");
+        } else if(jugador == 2 && pc == 1) {
+            alert("G A N A S T E");
+        }else if(jugador == 3 && pc == 2) {
+            alert("G A N A S T E");
+        }
+        else {
+            alert("PERDISTE");
+        }
     </script>
 </body>
 </html>
