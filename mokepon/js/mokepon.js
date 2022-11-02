@@ -7,7 +7,7 @@ function seleccionarMascotaJugador() {
     let mascotaSeleccionada = document.querySelectorAll("input[name='mascota']");
 
     // for ( let i= 0; i > mascotaSeleccionada.length; i++) {
-    //     if (mascotaSeleccionada[i].checked == i) {
+    //     if (mascotaSeleccionada == i) {
     //         alert('Seleccionaste ')
     //     } else {
     //         alert('EROOR')
