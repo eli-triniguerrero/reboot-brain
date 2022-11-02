@@ -5,7 +5,7 @@ function iniciarJuego () {
 
 function seleccionarMascotaJugador() {
     let mascotaSeleccionada = document.querySelectorAll("input[name='mascota']");
-
+    let spanMascotaJugador = document.getElementById('mascota-jugador');
     // for ( let i= 0; i > mascotaSeleccionada.length; i++) {
     //     if (mascotaSeleccionada == i) {
     //         alert('Seleccionaste ')
@@ -15,17 +15,17 @@ function seleccionarMascotaJugador() {
     // }
     
     if (mascotaSeleccionada[0].checked) {
-        alert('Seleccionaste a HIPODOGE');
+        spanMascotaJugador.innerHTML = 'HIPODOGE';
     } else if (mascotaSeleccionada[1].checked) {
-        alert('Seleccionaste a CAPIPEPO');
+        spanMascotaJugador.innerHTML = 'CAPIPEPO';
     } else if (mascotaSeleccionada[2].checked) {
-        alert('Seleccionaste a RATIGUEYA');
+        spanMascotaJugador.innerHTML = 'RATIGUEYA';
     } else if (mascotaSeleccionada[3].checked) {
-        alert('Seleccionaste a LANGOSTELVIS');
+        spanMascotaJugador.innerHTML = 'LANGOSTELVIS';
     } else if (mascotaSeleccionada[4].checked) {
-        alert('Seleccionaste a TUCAPALMA');
+        spanMascotaJugador.innerHTML= 'TUCAPALMA';
     } else if (mascotaSeleccionada[5].checked) {
-        alert('Seleccionaste a PYDOS');
+        spanMascotaJugador.innerHTML = 'PYDOS';
     } else {
         alert('NO HAS SELECCIONADO NADA, SELECCIONA UNA MASCOTA!');
     }
